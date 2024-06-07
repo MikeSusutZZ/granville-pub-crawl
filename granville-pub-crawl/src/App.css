@@ -1,0 +1,105 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  color:rgb(255, 255, 255);
+  background-color: #1a1a1a;
+  
+}
+/* src/App.css or relevant CSS file */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.video-container {
+  width: 60%; /* Adjust this percentage to fit your design */
+  aspect-ratio: 16 / 9; /* Maintains the 16:9 aspect ratio */
+  background: #000;
+}
+
+.video-container .responsive-video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
+
+/* src/components/Header.css */
+
+.header {
+  position: relative;
+  
+  color: white;
+  padding: 100px 0; /* Adjust padding as needed */
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the darkness level here */
+}
+
+.header h1 {
+  position: relative;
+  z-index: 1;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Media query for phones */
+@media (max-width: 768px) {
+  .responsive-video {
+    height: auto; /* Reset height */
+    max-width: 90%; /* Ensure it fits within the screen width */
+  }
+}
+
+/* src/components/Buttons.css */
+.glow-button {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff0099, #493240);
+  box-shadow: 0 0 10px #8a0053, 0 0 20px #a40062, 0 0 30px #910057, 0 0 40px #ff0099;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.glow-button:hover {
+  background: linear-gradient(45deg, #007c9b, #00d5ff);
+  box-shadow: 0 0 20px #00ccff, 0 0 30px #00e5ff, 0 0 40px #009ed8, 0 0 50px #ff0099;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.img-fluid {
+  box-shadow: 0 0 10px #8a0053, 0 0 10px #a40062, 0 0 10px #910057, 0 0 10px #ff0099;
+}
+
+
