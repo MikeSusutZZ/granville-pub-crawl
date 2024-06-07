@@ -6,7 +6,7 @@ const Video = () => (
     <div className="video-container">
       <iframe
         className="responsive-video"
-        src="https://www.youtube.com/embed/SAYE3CR23XI"
+        src="https://www.youtube.com/embed/IaiZRhTE3Ig"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
