@@ -19,8 +19,7 @@ body {
 .video-container {
   width: 60%; /* Adjust this percentage to fit your design */
   aspect-ratio: 16 / 9; /* Maintains the 16:9 aspect ratio */
-  background: #000;
-}
+  background: transparent;}
 
 .video-container .responsive-video {
   width: 100%;
@@ -28,6 +27,21 @@ body {
   border: 0;
 }
 
+@media (max-width: 600px) {
+  /* src/App.css or relevant CSS file */
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.video-container .responsive-video {
+  border: 0;
+}
+
+}
 
 
 
